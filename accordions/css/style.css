@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  background: white;
+  height: 5%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 90%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-general {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 800px;
+}
+.container-general .gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+.container-general .gallery-wrap .item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+}
+.container-general .gallery-wrap .item:hover {
+  flex: 7;
+}
+
+.wrap-effect-1 .item:first-of-type {
+  background-image: url('https://image.shutterstock.com/image-photo/spring-blossom-background-beautiful-nature-260nw-1033292395.jpg');
+}
+.wrap-effect-1 .item:nth-of-type(2) {
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/08/10/10/small-fresh-1243655_960_720.jpg');
+}
+.wrap-effect-1 .item:nth-of-type(3) {
+  background-image: url('https://pa1.narvii.com/6819/9af177a93a692487400b0440717b91903b5bc66c_hq.gif');
+}
+.wrap-effect-1 .item:nth-of-type(4) {
+  background-image: url('https://n7tpw52zdt-flywheel.netdna-ssl.com/wp-content/uploads/2018/10/prettyflowers08.jpg');
+}
+.wrap-effect-1 .item:last-of-type {
+  background-image: url('https://image.shutterstock.com/image-photo/beautiful-floral-spring-abstract-background-260nw-1009843408.jpg');
+}
+
+.wrap-effect-2 .item:hover {
+  transform: translate3d(0, 0, 100px);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  filter: saturate(2) contrast(120%);
+}
+.wrap-effect-2 .item:first-of-type {
+  background-image: url("https://images.all-free-download.com/images/wallpapers_large/beautiful_sunset_wallpaper_landscape_nature_wallpaper_1025.jpg");
+}
+.wrap-effect-2 .item:nth-of-type(2) {
+  background-image: url("http://eskipaper.com/images/sunset-wallpaper-11.jpg");
+}
+.wrap-effect-2 .item:nth-of-type(3) {
+  background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/04114736/Sunset-Clouds-Wallpaper.jpg");
+}
+.wrap-effect-2 .item:nth-of-type(4) {
+  background-image: url("https://wallpapercave.com/wp/sf3Ufkm.jpg");
+}
+.wrap-effect-2 .item:last-of-type {
+  background-image: url("https://stmed.net/sites/default/files/sunset-wallpapers-25318-3450890.jpg");
+}
+
+.wrap-effect-3 .item:hover {
+  animation: rotate 0.7s ease-in-out both;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.wrap-effect-3 .item:first-of-type {
+  background-image: url("http://bestanimations.com/Nature/nature-waterfall-animated-gif-4.gif");
+}
+.wrap-effect-3 .item:nth-of-type(2) {
+  background-image: url("http://bestanimations.com/Nature/beautiful-forest-waterfall-rocks-nature-animated-gif.gif");
+}
+.wrap-effect-3 .item:nth-of-type(3) {
+  background-image: url("http://bestanimations.com/Nature/nature-waterfall-animated-gif-7.gif");
+}
+.wrap-effect-3 .item:nth-of-type(4) {
+  background-image: url("http://bestanimations.com/Nature/nature-waterfall-animated-gif-1.gif");
+}
+.wrap-effect-3 .item:last-of-type {
+  background-image: url("http://bestanimations.com/Nature/incredible-cascading-waterfall-nature-animated-gif.gif");
+}
+
+.wrap-effect-4 .item:hover {
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  filter: saturate(2) contrast(120%);
+}
+.wrap-effect-4 .item:first-of-type {
+  background-image: url("http://bestanimations.com/Nature/volcano-lava-exploding-orange-animated-gif.gif");
+}
+.wrap-effect-4 .item:nth-of-type(2) {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8b/Norikura_Skyline_and_Hida_Mountains.jpg");
+}
+.wrap-effect-4 .item:nth-of-type(3) {
+  background-image: url("http://bestanimations.com/Nature/clouds-floating-over-himalaya-mountains-animated-gif.gif");
+}
+.wrap-effect-4 .item:nth-of-type(4) {
+  background-image: url("https://cdn.pixabay.com/photo/2015/03/26/09/41/mountain-690104__340.jpg");
+}
+.wrap-effect-4 .item:last-of-type {
+  background-image: url("http://bestanimations.com/Nature/clouds-flowing-over-lake-mountains-nature-animated-gif.gif");
+}
+
+.inspire {
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+}
+.inspire:after {
+  background: #38ef7d;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .4;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+.inspire:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(10deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(5deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
