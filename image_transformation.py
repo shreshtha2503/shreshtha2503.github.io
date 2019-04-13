@@ -21,7 +21,7 @@ for i in range(0, width):
         elif(gray_value < 150):
             new_color = (255, 238, 167, 255)
         elif(gray_value < 200):
-            new_color = (193, 189, 186, 255)
+            new_color = (255, 255, 203, 255)
         image_pixels[i,j] = (new_color[0], new_color[1], new_color[2], 255)
 
 my_image.show()
